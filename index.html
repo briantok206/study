@@ -35,7 +35,7 @@
             .then(raw_data => {
             const lines=raw_data.trim().split('\n');
             lines.forEach(line => {
-            const parts = line.split('<split>')
+            const parts = line.split("<split>")
             const adding={'question':parts[0],
                     'answer':parts[1]
                 };
