@@ -96,10 +96,9 @@
             correct.style.display="none"
             result.style.display="none"
             i = Math.floor(Math.random()*questions.length);
-            console.log(i)
             q = questions[i].question;
             a = questions[i].answer;
-            questions.pop(i);
+            questions.splice(i, 1);
             listedQuestion.innerHTML=q;
         }
 
