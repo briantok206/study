@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CORE Midterm 1</title>
+    <title>CORE Midterm 2</title>
 </head>
 <body>
-    <h1>Midterm 1</h1>
+    <h1>Midterm 2</h1>
     <p id="listedQuestionId"></p>
     <input id="inputtedTextId" type="text">
     <button id="submitButtonId">Submit</button>
@@ -27,8 +27,8 @@
             lines.forEach(line => {
             const parts = line.split("<split>")
             console.log(parts)
-            const adding={'questions':parts[0],
-                    'answer':parts[1]
+            const adding={questions:parts[0],
+                    answer:parts[1]
                 };
             questions.push(adding)
             });
