@@ -1,0 +1,156 @@
+Where does electric charge come from?<split>Electric charge is a fundamental property of matter arising from subatomic particles: protons carry positive charge (+e) and electrons carry negative charge (−e), where e = 1.6 × 10⁻¹⁹ C.
+What is the equation for the electric force between two point charges?<split>Coulomb’s Law: F = k * |q₁ * q₂| / r²
+In Coulomb’s Law, what does each variable represent?<split>F is the magnitude of the force (N), q₁ and q₂ are the charges (C), r is the distance between charges (m), and k is Coulomb’s constant (≈ 8.99 × 10⁹ N·m²/C²).
+What is the direction of the electric force between two like charges?<split>The force is **repulsive**: each charge pushes the other away along the line connecting them.
+What is the direction of the electric force between two opposite charges?<split>The force is **attractive**: each charge pulls the other toward itself along the line connecting them.
+If two charges of +2 μC and -3 μC are placed 0.5 m apart, what is the magnitude of the force between them?<split>F = (8.99 × 10⁹) * |(2 × 10⁻⁶) * (-3 × 10⁻⁶)| / (0.5)² = 0.21576 N
+If the distance between two charges doubles, how does the force change?<split>According to Coulomb’s Law, force is inversely proportional to the square of the distance, so if distance doubles, the force becomes one-fourth as strong.
+What is the equation for electric power?<split>P = V * I
+In the power equation P = V * I, what do the variables represent?<split>P is power in watts (W), V is voltage in volts (V), and I is current in amperes (A).
+How do you calculate current if you know power and voltage?<split>I = P / V
+How do you calculate voltage if you know power and current?<split>V = P / I
+If a device uses 60 watts of power and operates at 120 volts, what is the current?<split>I = 60 W / 120 V = 0.5 A
+What is the unit of power in an electrical circuit?<split>The unit of power is the watt (W).
+How are volts and amps related in terms of resistance?<split>Using Ohm’s Law: V = I * R
+How can you express power in terms of resistance and current?<split>P = I² * R
+How can you express power in terms of voltage and resistance?<split>P = V² / R
+If a circuit has 2 A of current flowing through a 10 Ω resistor, what is the power dissipated?<split>P = I² * R = (2)² * 10 = 4 * 10 = 40 W
+How can a charged object stick to a neutral object?<split>A charged object can polarize a neutral object by causing a redistribution of charges within it, leading to an attractive electrostatic force.
+What is electrostatic induction?<split>Electrostatic induction is the process where a charged object causes redistribution of charges in a nearby neutral object without direct contact.
+Why does a charged sock stick to a wall?<split>The charged sock polarizes the wall’s surface molecules—opposite charges are attracted and move slightly, creating a net attractive force.
+What is the direction of the force between a charged object and a polarized neutral object?<split>The force is attractive, as opposite charges in the polarized area are drawn toward the charged object.
+Does Coulomb’s Law apply to interactions between charged and neutral objects?<split>Not directly, but polarization results in regions of induced charge that can interact using principles similar to Coulomb’s Law.
+How does distance affect the attraction between a charged and a neutral object?<split>As distance increases, the induced polarization effect weakens, and the attractive force decreases.
+What role does the material of the neutral object play in electrostatic attraction?<split>Insulating materials allow surface charge redistribution (polarization), enhancing attraction; conductors may allow charge flow instead.
+What is electrostatic potential energy?<split>Electrostatic potential energy is the energy stored due to the relative positions of charged objects in an electric field.
+What is the equation for electrostatic potential energy between two point charges?<split>U = k * q₁ * q₂ / r
+In the equation U = k * q₁ * q₂ / r, what do the variables represent?<split>U is potential energy (Joules), k is Coulomb’s constant (8.99 × 10⁹ N·m²/C²), q₁ and q₂ are the charges (C), and r is the distance between them (m).
+How does the sign of electrostatic potential energy relate to attraction or repulsion?<split>If U is negative, the charges attract; if U is positive, the charges repel.
+What happens to electrostatic potential energy as two opposite charges move closer together?<split>The potential energy becomes more negative, meaning the system becomes more stable.
+What is the relationship between electrostatic force and potential energy?<split>The electric force is the negative gradient of the potential energy: F = -dU/dr.
+How does distance affect electrostatic potential energy?<split>Potential energy is inversely proportional to distance (U ∝ 1/r), so as distance increases, potential energy decreases in magnitude.
+What is voltage?<split>Voltage is the electric potential difference between two points, measured in volts (V).
+What is the equation for voltage in terms of energy and charge?<split>V = U / q
+In the equation V = U / q, what do the variables represent?<split>V is voltage (V), U is electric potential energy (J), and q is charge (C).
+How do charges respond to a voltage difference?<split>Positive charges move from high to low potential; negative charges move from low to high potential.
+What causes charges to move in an electric circuit?<split>A voltage difference creates an electric field, which exerts a force on charges, causing them to move.
+What is the direction of electric current relative to voltage?<split>Conventional current flows from higher voltage to lower voltage.
+How is voltage related to electric field?<split>Electric field is the negative gradient of voltage: E = -dV/dr
+If 3 joules of energy move 1 coulomb of charge between two points, what is the voltage difference?<split>V = U / q = 3 J / 1 C = 3 V
+What happens to a positive test charge placed in a region of high voltage?<split>It experiences a force pushing it toward a region of lower voltage.
+How does fabric softener reduce static electricity?<split>Fabric softeners deposit conductive chemicals that allow charges to dissipate, reducing buildup of static electricity.
+How does hair conditioner reduce static electricity?<split>Hair conditioners coat hair with a thin, slightly conductive layer that allows excess charges to spread out and neutralize.
+Why do fabrics cling together without fabric softener?<split>Friction between fabrics transfers electrons, creating opposite charges that attract each other (static cling).
+How do antistatic agents in products work?<split>They increase surface conductivity so that charges can move and neutralize instead of building up.
+Why does reducing static electricity prevent shocks?<split>Static shocks occur when built-up charges discharge rapidly; reducing buildup prevents sudden discharge.
+What is the role of moisture in reducing static electricity?<split>Moisture increases conductivity of surfaces, allowing charge to leak away gradually and reduce static buildup.
+What is a photoconductor?<split>A photoconductor is a material that becomes electrically conductive when exposed to light.
+How does a photoconductor behave in darkness?<split>In darkness, a photoconductor has very high resistance and does not conduct electricity well.
+Why is a photoconductor important in a photocopier?<split>Photoconductors are used to form the image; they become conductive in lighted areas, allowing charge to dissipate and attract toner.
+How does a photocopier use light and photoconductors to create an image?<split>Light reflects off the original image onto the photoconductor; lighted areas lose charge, dark areas retain charge and attract toner.
+What happens to charge on the photoconductor when exposed to light?<split>Light exposure frees electrons, lowering resistance and allowing charge to leak away in illuminated regions.
+Why do dark areas on the original document attract toner in a photocopier?<split>Dark areas do not reflect light, so the photoconductor retains charge there, which pulls oppositely charged toner particles.
+What role does electrostatic force play in a photocopier?<split>Electrostatic force causes toner particles to stick to charged areas of the photoconductive drum, forming the image.
+What is an electric field?<split>An electric field is a region of space around a charged object where another charge experiences a force.
+What is the equation for electric field strength from a point charge?<split>E = k * |q| / r²
+What do the variables in E = k * |q| / r² represent?<split>E is electric field strength (N/C), k is Coulomb’s constant, q is the source charge (C), and r is distance from the charge (m).
+What is the direction of the electric field around a positive charge?<split>The electric field points radially outward from a positive charge.
+What is the direction of the electric field around a negative charge?<split>The electric field points radially inward toward a negative charge.
+How is electric field related to force on a test charge?<split>F = q * E, where F is force (N), q is charge (C), and E is electric field (N/C).
+How is electric field related to voltage?<split>E = -dV/dr, meaning electric field is the negative gradient of electric potential.
+What does it mean for electric field to be a voltage gradient?<split>It means electric field points in the direction of greatest decrease in voltage and has a magnitude proportional to the rate of change of voltage.
+What is the electric field inside a conductor at electrostatic equilibrium?<split>The electric field inside a conductor is zero.
+What is the voltage inside a conductor at electrostatic equilibrium?<split>The voltage is constant throughout the conductor, meaning no electric field exists inside.
+Why is there no electric field inside a metal cage (Faraday cage)?<split>Charges on the outer surface rearrange to cancel any external fields, resulting in zero electric field inside.
+What is electric current?<split>Electric current is the flow of electric charge, measured in amperes (A).
+What is the equation for current?<split>I = Q / t
+What do the variables in I = Q / t represent?<split>I is current (A), Q is the amount of charge (C), and t is time (s).
+What is a closed loop in a circuit?<split>A closed loop is a complete path for current to flow through a power source and back again.
+What is an open loop in a circuit?<split>An open loop is a break in the circuit where current cannot flow—like a switch in the off position.
+What is a short circuit?<split>A short circuit is a low-resistance path that allows excessive current to bypass the intended components, which can cause overheating or damage.
+Why is a short circuit dangerous?<split>Because it allows a large amount of current to flow uncontrollably, potentially causing fires or damaging components.
+How does resistance affect the path of current in a circuit?<split>Current follows the path of least electrical resistance.
+What is the relationship between voltage, current, and resistance?<split>Ohm’s Law: V = I * R
+How does current behave in a circuit with multiple paths (like a parallel circuit)?<split>More current flows through the path with lower resistance.
+How do you combine batteries to increase total voltage?<split>Connect the batteries in series; the total voltage is the sum of the individual voltages.
+What is the total voltage of two 1.5 V batteries connected in series?<split>1.5 V + 1.5 V = 3.0 V
+How do you connect batteries in series?<split>Connect the positive terminal of one battery to the negative terminal of the next.
+How do you combine batteries to increase total current capacity but keep the same voltage?<split>Connect the batteries in parallel; the voltage stays the same, but the current capacity increases.
+What does connecting batteries in parallel do?<split>It keeps the voltage the same as a single battery but allows more total current to be supplied over time.
+How can you use a battery to charge another battery?<split>You must connect a higher voltage battery to a lower voltage battery with correct polarity and current-limiting control.
+What is important when charging a battery with another battery?<split>The charging voltage must be slightly higher than the battery being charged, and current must be limited to prevent damage.
+What happens if you reverse polarity while charging a battery?<split>Reversing polarity can damage or destroy the battery and create safety hazards.
+Why is connecting batteries properly important in a circuit?<split>Incorrect battery configurations can cause overvoltage, overheating, or failure of components.
+What are the basic components of a flashlight circuit?<split>Battery, switch, wires, and a filament (bulb).
+What is the role of the battery in a flashlight?<split>The battery provides the voltage (electric potential) that drives current through the circuit.
+What does the switch do in a flashlight circuit?<split>The switch opens or closes the circuit, controlling whether current flows or not.
+What is the function of the filament in the flashlight?<split>The filament resists current flow, converting electrical energy into light and heat.
+Where is the voltage highest in a flashlight circuit?<split>The voltage is highest at the positive terminal of the battery, just before the filament.
+Where is the voltage lowest in a flashlight circuit?<split>The voltage is lowest at the negative terminal of the battery, just after the filament.
+What happens when the flashlight switch is open?<split>The circuit is incomplete, so no current flows and the light stays off.
+What happens when the flashlight switch is closed?<split>A complete circuit is formed, current flows from the battery through the filament, and the bulb lights up.
+Why does the filament glow in a flashlight?<split>The filament has high resistance, which causes it to heat up and emit light when current passes through it.
+How does energy flow in a flashlight circuit?<split>Electrical energy flows from the battery through the circuit and is transformed into light and heat at the filament.
+What is the equation for power in an electrical circuit?<split>P = V * I
+What do the variables in P = V * I represent?<split>P is power in watts (W), V is voltage in volts (V), and I is current in amperes (A).
+What is Ohm’s Law?<split>Ohm’s Law is V = I * R
+What do the variables in V = I * R represent?<split>V is voltage (V), I is current (A), and R is resistance in ohms (Ω).
+How can you calculate power using current and resistance?<split>P = I² * R
+How can you calculate power using voltage and resistance?<split>P = V² / R
+Why is it important to match an electrical device to a battery?<split>To ensure the voltage and current provided by the battery match the device’s rated requirements and prevent damage or poor performance.
+What happens if the battery voltage is too high for the device?<split>Excess voltage can cause too much current, overheating, or permanent damage to the device.
+What happens if the battery voltage is too low for the device?<split>The device may not function properly or at all due to insufficient power.
+How do you select a battery to safely power a device?<split>Choose a battery with a voltage close to the device’s rated voltage and a current capacity that meets or exceeds the device’s current draw.
+What creates magnetism?<split>Magnetism is created by the motion of electric charges, usually from spinning or orbiting electrons in atoms.
+What is a magnetic field?<split>A magnetic field is a region around a magnet or moving charge where magnetic forces can be felt.
+What does a magnetic field look like around a bar magnet?<split>Magnetic field lines exit from the north pole and enter the south pole, forming closed loops.
+How is a magnetic field different from an electric field?<split>Magnetic fields affect moving charges and magnetic materials, while electric fields affect any charged object, whether moving or at rest.
+What is the force between two magnetic poles?<split>Like poles repel, unlike poles attract; the force weakens with distance, similar to Coulomb’s law for electric charges.
+What is the equation for magnetic force on a moving charge?<split>F = q * v × B
+In the equation F = q * v × B, what do the variables represent?<split>F is the magnetic force (N), q is charge (C), v is velocity (m/s), and B is magnetic field strength (T).
+How does a magnet stick to an unmagnetized object?<split>The magnet induces magnetic domains in the object to align temporarily, causing attraction.
+What is ferromagnetism?<split>Ferromagnetism is the property of materials like iron to become strongly magnetized due to aligned magnetic domains.
+What is magnetic polarization?<split>Magnetic polarization occurs when a material’s internal magnetic domains align under the influence of an external magnetic field.
+Why does a magnet attract iron but not plastic?<split>Iron is ferromagnetic and can become magnetized, while plastic is not and cannot respond to magnetic fields.
+What is an electromagnet?<split>An electromagnet is a magnet created by passing electric current through a wire, usually coiled around a metal core.
+How is an electromagnet different from a permanent magnet?<split>An electromagnet’s magnetic field can be turned on or off with current, while a permanent magnet always has a magnetic field.
+What is the relationship between electric current and magnetic fields?<split>Electric current generates a magnetic field around the conductor; stronger current produces a stronger magnetic field.
+What rule helps determine the direction of the magnetic field around a current-carrying wire?<split>The right-hand rule: point your thumb in the direction of current, and your fingers curl in the direction of the magnetic field.
+What happens to the strength of an electromagnet if you increase the current?<split>The magnetic field becomes stronger as current increases.
+What happens if you add more coils to the wire in an electromagnet?<split>More coils concentrate the magnetic field, making the electromagnet stronger.
+What is the role of the iron core in an electromagnet?<split>The iron core amplifies the magnetic field by aligning its internal magnetic domains.
+Can an electromagnet be turned off?<split>Yes, the magnetic field disappears when the current is turned off.
+What equation describes the magnetic field inside a long solenoid?<split>B = μ₀ * n * I
+In B = μ₀ * n * I, what do the variables represent?<split>B is magnetic field (T), μ₀ is the permeability of free space, n is number of turns per meter, and I is current (A).
+What is the difference between AC and DC current?<split>AC (alternating current) changes direction periodically, while DC (direct current) flows in only one direction.
+What does AC stand for?<split>AC stands for alternating current.
+What does DC stand for?<split>DC stands for direct current.
+What is the frequency of standard AC in the U.S.?<split>60 Hz, meaning it switches direction 60 times per second.
+Why is AC better for powering all the items in a home?<split>AC can be easily transmitted over long distances and transformed to different voltages using transformers.
+Why can’t DC be transmitted efficiently over long distances?<split>DC loses more energy to resistance in power lines and cannot easily change voltage levels with transformers.
+How do transformers work with AC?<split>Transformers use changing magnetic fields from AC to increase or decrease voltage levels efficiently.
+Why is DC still used in some devices?<split>DC is used in batteries and electronics because it provides a stable, consistent voltage for sensitive components.
+Can AC be converted to DC?<split>Yes, using a rectifier circuit to filter and convert the alternating signal into direct current.
+What kind of current do wall outlets provide?<split>Wall outlets provide AC, typically 120 V at 60 Hz in the U.S.
+What is magnetic induction?<split>Magnetic induction is the process by which a changing magnetic field creates an electric field, which can drive a current in a nearby circuit.
+What law explains magnetic induction?<split>Faraday’s Law of Induction.
+What is the equation for Faraday’s Law?<split>ε = -dΦ/dt
+What do the variables in ε = -dΦ/dt represent?<split>ε is the induced voltage (V), Φ is the magnetic flux (Wb), and dΦ/dt is the rate of change of magnetic flux over time.
+How does a changing magnetic field create an electric current?<split>The changing magnetic field induces an electric field, which pushes charges and creates a current in a closed loop.
+What is a transformer?<split>A transformer is a device that uses magnetic induction to transfer electrical energy from one circuit to another and change voltage levels.
+How does a transformer work?<split>An alternating current in the primary coil creates a changing magnetic field, which induces a voltage in the secondary coil.
+What is the transformer equation for voltage?<split>Vₛ/Vₚ = Nₛ/Nₚ
+What do the variables in Vₛ/Vₚ = Nₛ/Nₚ represent?<split>Vₛ and Vₚ are the secondary and primary voltages; Nₛ and Nₚ are the number of turns in the secondary and primary coils.
+How does a transformer change current?<split>As voltage increases, current decreases proportionally to conserve power: Iₛ/Iₚ = Nₚ/Nₛ
+Does a transformer change power?<split>No, in an ideal transformer, power is conserved: Pₚ = Pₛ, or Vₚ * Iₚ = Vₛ * Iₛ
+Why do we use transformers in the power grid?<split>They allow us to step up voltage for efficient transmission and step it down for safe use in homes.
+What is the energy stored in an electric field?<split>The energy stored in an electric field is called electric potential energy.
+What is the equation for energy stored in a capacitor (electric field)?<split>U = ½ * C * V²
+What do the variables in U = ½ * C * V² represent?<split>U is energy (J), C is capacitance (F), and V is voltage (V).
+Where is the energy physically stored in a capacitor?<split>The energy is stored in the electric field between the capacitor’s plates.
+What is the energy stored in a magnetic field?<split>The energy is stored in the magnetic field generated by a current-carrying inductor.
+What is the equation for energy stored in a magnetic field (inductor)?<split>U = ½ * L * I²
+What do the variables in U = ½ * L * I² represent?<split>U is energy (J), L is inductance (H), and I is current (A).
+Where is the energy physically stored in an inductor?<split>The energy is stored in the magnetic field created around the inductor coil.
+How does increasing voltage affect electric field energy in a capacitor?<split>Energy increases with the square of voltage: doubling voltage quadruples the energy.
+How does increasing current affect magnetic field energy in an inductor?<split>Energy increases with the square of current: doubling current quadruples the stored energy.
