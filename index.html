@@ -18,7 +18,21 @@
     <p><span id="correctAnswersId">0</span> questions correct out of <span id="totalQuestionsId">0</span> questions asked.</p>
     <script>
         "use strict";
-        while (prompt('Enter Password:') != 'bpt8379@nyu.edu'){}
+        // Password check with localStorage
+        const correctPassword = 'bpt8379@nyu.edu';
+        const savedPassword = localStorage.getItem('quizPassword');
+
+        if (savedPassword !== correctPassword) {
+            let enteredPassword;
+            do {
+                enteredPassword = prompt('Enter Password:');
+        if (enteredPassword === null) {
+            alert("Access denied.");
+            throw new Error("User cancelled login.");
+            }
+        } while (enteredPassword !== correctPassword);
+            localStorage.setItem('quizPassword', enteredPassword);
+        }
         let questions = []
         fetch('data.txt')
             .then(response => response.text())
