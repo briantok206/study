@@ -31,6 +31,7 @@
                 };
             questions.push(adding)
             });
+            newQuestion()
         });
         document.addEventListener("keydown", function(event) {
             if (event.key === "Enter" && submitButton.style.display != "none") {
@@ -109,8 +110,6 @@
             result.innerText="Overridden as correct";
             result.style.color="Orange";
         }
-
-        newQuestion()
     </script>
 </body>
 </html>
