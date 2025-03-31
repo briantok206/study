@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORE Midterm 1</title>
+</head>
+<body>
+    <h1>Midterm 1</h1>
+    <p id="listedQuestionId"></p>
+    <input id="inputtedTextId" type="text">
+    <button id="submitButtonId">Submit</button>
+    <button style="display:none" id="overrideButtonId">Override</button>
+    <button style="display:none" id="newQuestionButtonId">New Question</button>
+    <p style="display:none; font-size: 24px;" id="resultId"></p>
+    <p style="display:none" id="answeredId">You answered:</p>
+    <p style="display:none" id="correctId">The correct answer is:</p>
+    <p><span id="correctAnswersId">0</span> questions correct out of <span id="totalQuestionsId">0</span> questions asked.</p>
+    <script>
+        "use strict";
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Enter" && submitButton.style.display != "none") {
+                submit();
+            }
+            else if (event.key === "Enter" && newQuestionButton.style.display != "none") {
+                newQuestion();
+            }
+        });
+
+
+        let questions = [
+                        // Newton's Laws
+                        {"question":"What is Newton's First Law?", "answer":"An object in motion stays in motion unless acted upon by an external force (Inertia)."},
+                        {"question":"What is Newton's Second Law?", "answer":"F = m * a"},
+                        {"question":"Regarding Newton's Second Law, what unit is used for F?", "answer":"Newton (N)"},
+                        {"question":"Regarding Newton's Second Law, what unit is used for M?", "answer":"Kilogram (kg)"},
+                        {"question":"Regarding Newton's Second Law, what unit is used for A?", "answer":"Meters per second squared (m/s²)"},
+                        {"question":"What is Newton's Third Law?", "answer":"For every action, there is an equal and opposite reaction."},
+                        {"question":"If you push a wall with 50N of force, how much force does the wall exert back?", "answer":"50N, in the opposite direction."},
+                        {"question":"If a 5kg object accelerates at 3 m/s², what force is acting on it?", "answer":"F = 5 * 3 = 15N"},
+                        {"question":"If an object is moving at a constant velocity, what can you say about the net force acting on it?", "answer":"The net force is zero (Newton's First Law)."},
+                        {"question":"If two skaters push off each other, what will happen?", "answer":"They will both move in opposite directions due to Newton’s Third Law."},                 
+
+                        // Scalars & Vectors
+                        {"question":"What is a vector quantity?", "answer":"A quantity that has both magnitude and direction."},
+                        {"question":"What is a scalar quantity?", "answer":"A quantity that has only magnitude."},
+                        {"question":"Give three examples of scalar quantities.", "answer":"Time, mass, speed."},
+                        {"question":"Give three examples of vector quantities.", "answer":"Velocity, acceleration, force."},
+                        {"question":"A car moves 100m east and then 50m west. What is its displacement?", "answer":"50m east."},
+                        {"question":"A runner completes a 400m lap on a track. What is their displacement?", "answer":"0m (they end where they started)."},
+
+                        // Kinematics & Motion Graphs
+                        {"question":"What is the equation for distance?", "answer":"d = v * t"},
+                        {"question":"What is the equation for time?", "answer":"t = d / v"},
+                        {"question":"What is the equation for velocity?", "answer":"v = d / t"},
+                        {"question":"What is the equation for acceleration?", "answer":"a = (v1 - v0) / t"},
+                        {"question":"What is the equation for velocity and time?", "answer":"v = v0 + a * t"},
+                        {"question":"What is the equation for position and time?", "answer":"x = x0 + v0 * t + 1/2 * a * t²"},
+                        {"question":"What does a flat horizontal line on a velocity-time graph represent?", "answer":"Constant velocity."},
+                        {"question":"What does a flat horizontal line on an acceleration-time graph represent?", "answer":"Constant acceleration."},
+                        {"question":"A car accelerates from 0 to 20 m/s in 4s. What is its acceleration?", "answer":"a = (20 - 0) / 4 = 5 m/s²."},                  
+
+                        // Work & Energy
+                        {"question":"What is the equation for work?", "answer":"W = F * d * cos(θ)"},
+                        {"question":"For the equation for work, what is the unit for work?", "answer":"Joule (J)"},
+                        {"question":"For the equation for work, what is the unit for force?", "answer":"Newton (N)"},
+                        {"question":"What is the equation for gravitational potential energy?", "answer":"PE = m * g * h"},
+                        {"question":"For gravitational potential energy, what is the unit for g?", "answer":"Acceleration due to gravity (m/s²)"},
+                        {"question":"What is the equation for kinetic energy?", "answer":"KE = 1/2 * m * v²"},
+                        {"question":"What is the work-energy theorem?", "answer":"The work done on an object is equal to its change in kinetic energy."},
+                        {"question":"A person lifts a 10kg weight 2m off the ground. How much gravitational potential energy is stored?", "answer":"PE = 10 * 9.8 * 2 = 196J"},
+                        {"question":"If a 3kg ball moving at 4 m/s stops, how much energy is lost?", "answer":"KE = 1/2 * 3 * 4² = 24J."},                  
+
+                        // Ramps & Equilibrium
+                        {"question":"How do ramps reduce the amount of force needed to lift an object?", "answer":"By spreading the force over a longer distance."},
+                        {"question":"What is the equation for force on a ramp?", "answer":"F_ramp = mg * sin(θ)"},
+                        {"question":"What is equilibrium?", "answer":"A state where net force is zero."},
+                        {"question":"What is the difference between stable and unstable equilibrium?", "answer":"Stable equilibrium returns to its original state after disturbance; unstable equilibrium does not."},                  
+
+                        // Hooke’s Law & Oscillations
+                        {"question":"What is Hooke’s Law?", "answer":"F = -kx"},
+                        {"question":"What is the potential energy stored in a spring?", "answer":"PE_spring = 1/2 * k * x²"},
+                        {"question":"What is the period of a pendulum?", "answer":"T = 2π * sqrt(L/g)"},
+                        {"question":"What does the period of a pendulum depend on?", "answer":"The length of the pendulum and gravity."},
+                        {"question":"What happens to the period of a pendulum if you move it to the Moon?", "answer":"It increases because gravity is weaker."},                    
+
+                        // Waves & Sound
+                        {"question":"What is the equation for wave speed?", "answer":"v = λ * f"},
+                        {"question":"What is the Doppler effect?", "answer":"A change in frequency due to relative motion between source and observer."},
+                        {"question":"What is a transverse wave?", "answer":"A wave where motion is perpendicular to wave direction."},
+                        {"question":"What is a longitudinal wave?", "answer":"A wave where motion is parallel to wave direction."},
+                        {"question":"What happens to sound frequency when an ambulance moves toward you?", "answer":"It increases due to the Doppler effect."},
+                        {"question":"A musician tightens a guitar string. What happens to the pitch?", "answer":"It increases."},                   
+
+                        // Harmonics & Instruments
+                        {"question":"What are harmonics?", "answer":"Higher frequency modes of vibration that are integer multiples of the fundamental frequency."},
+                        {"question":"What factors determine the fundamental frequency of a string instrument?", "answer":"Tension, length, and mass per unit length of the string."},
+                        {"question":"What happens when you increase the length of a string?", "answer":"The frequency decreases."},
+                        {"question":"What happens when you increase the tension of a string?", "answer":"The frequency increases."},                    
+
+                        // Applied Hypothetical Scenarios
+                        {"question":"If you throw a ball straight up with a velocity of 10m/s, what will be its velocity at the highest point?", "answer":"0 m/s."},
+                        {"question":"A person in space lets go of a wrench. What happens to it?", "answer":"It continues moving at the same velocity due to Newton’s First Law."},
+                        {"question":"A skydiver reaches terminal velocity. What can be said about the forces acting on them?", "answer":"Air resistance equals gravitational force, so net force is zero."},
+                        {"question":"If a car crash happens, why is a seatbelt important?", "answer":"It provides a force to counteract inertia, preventing forward motion."},
+                        ];
+
+        const listedQuestion = document.getElementById("listedQuestionId");
+        const inputtedText = document.getElementById("inputtedTextId");
+        const submitButton = document.getElementById("submitButtonId");
+        const overrideButton = document.getElementById("overrideButtonId");
+        const newQuestionButton = document.getElementById("newQuestionButtonId");
+        const correctAnswers = document.getElementById("correctAnswersId");
+        const totalQuestions = document.getElementById("totalQuestionsId");
+        const correct = document.getElementById("correctId");
+        const answered = document.getElementById("answeredId");
+        const result = document.getElementById("resultId");
+        let correct_count = 0;
+        let totalAsked_count = 0;
+        let i;
+        let q;
+        let a;
+
+        submitButton.onclick=submit;
+        overrideButton.onclick=override;
+        newQuestionButton.onclick=newQuestion;
+
+        function submit(event){
+            if (event){event.preventDefault()};
+            let isCorrect =  inputtedText.value.toLowerCase()==a.toLowerCase() ? true : false;
+            totalAsked_count++;
+            totalQuestions.innerText=totalAsked_count;
+            newQuestionButton.style.display="inline"
+            submitButton.style.display="none"
+            result.style.display="inline"
+            if (isCorrect){
+                correct_count++;
+                result.innerText="Correct";
+                result.style.color="green";
+                correctAnswers.innerText=correct_count;
+            }
+            else if (!isCorrect){
+                answered.innerText="You answered: "+inputtedText.value;
+                correct.innerText="Correct answer: "+a;
+                answered.style.display="block"
+                correct.style.display="block"
+                overrideButton.style.display="inline"
+                result.innerText="Incorrect";
+                result.style.color="red";
+            }
+            inputtedText.value="";
+        }
+
+        function newQuestion(event){
+            if (event){event.preventDefault()};
+            submitButton.style.display="inline"
+            overrideButton.style.display="none"
+            newQuestionButton.style.display="none"
+            answered.style.display="none"
+            correct.style.display="none"
+            result.style.display="none"
+            i = Math.floor(Math.random()*questions.length);
+            q = questions[i].question;
+            a = questions[i].answer;
+            questions.pop(i);
+            listedQuestion.innerHTML=q;
+        }
+
+        function override(event){
+            overrideButton.style.display="none"
+            correct_count++;
+            correctAnswers.innerText=correct_count;
+            result.innerText="Overridden as correct";
+            result.style.color="Orange";
+        }
+
+        newQuestion()
+    </script>
+</body>
+</html>
